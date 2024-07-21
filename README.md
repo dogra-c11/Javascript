@@ -1,3 +1,3 @@
 # Javascript
 Learning Javascript from scratch
-Chai aur code
+from Chai aur code
