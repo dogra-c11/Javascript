@@ -1,0 +1,23 @@
+how javascript runs in the background
+javascript is single threaded
+
+---Javascript Execution Context---
+global execution Context
+function execution Context
+eval execution context
+
+Memory Execution Phase - where variables and functions are stored
+Execution Phase - execution is done
+
+--Steps--
+1 Global Execution - this is assigned
+
+2 Memory Phase - variables are stored with undefined , functions are stored with their defination
+
+3 Execution Phase - variables are assigned the values which are defined in the code
+                    functions are assigned a new environment with a execution thread(new execution context) and same steps follow in this environment from the start ie global , memory and execution
+                    the above execution context is deleted after all the steps are performed
+
+--Call Stack --
+LIFO basis
+
