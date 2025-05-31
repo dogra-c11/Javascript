@@ -18,3 +18,4 @@ function test(...data){
 }
 test(1,"hello");  // [1,'hello']
 
+// what is the difference between rest and spread?

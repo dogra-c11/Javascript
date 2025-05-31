@@ -4,7 +4,7 @@ const user = {
     price : 99,
     welcomeMessage : function(){
         //console.log(`${username} , welcome`); // will give error usename undefined
-        console.log(`${this.username} , welcome`); // will give error usename undefined
+        console.log(`${this.username} , welcome`); // chirag , welcome
     }
 }
 
