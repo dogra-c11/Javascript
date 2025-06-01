@@ -1,0 +1,34 @@
+<!-- filepath: c:\Users\ChiragDogra\JS\Javascript\events\test.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <h2>Event Testing</h2>
+    <button id="clickBtn">Click Me</button>
+    <input type="text" id="inputBox" placeholder="Type something..." />
+    <div id="hoverDiv" style="width:150px;height:50px;background:#e0e0e0;margin-top:10px;line-height:50px;text-align:center;">
+        Hover over me
+    </div>
+    <p id="output"></p>
+    <script>
+        document.getElementById('clickBtn').addEventListener('click', function() {
+            document.getElementById('output').textContent = 'Button clicked!';
+        });
+
+        document.getElementById('inputBox').addEventListener('input', function(e) {
+            document.getElementById('output').textContent = 'Input: ' + e.target.value;
+        });
+
+        document.getElementById('hoverDiv').addEventListener('mouseover', function() {
+            document.getElementById('output').textContent = 'Mouse is over the div!';
+        });
+
+        document.getElementById('hoverDiv').addEventListener('mouseout', function() {
+            document.getElementById('output').textContent = '';
+        });
+    </script>
+</body>
+</html>
