@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript bind() Example</title>
+</head>
+<body>
+    <h2>bind() Example</h2>
+    <button id="btn">Show Message</button>
+    <script>
+        const user = {
+            name: "Chirag",
+            showMessage: function() {
+                alert("Hello, " + this.name + "!");
+            }
+        };
+
+        // Without bind: 'this' is lost when passing as a callback
+        // document.getElementById('btn').addEventListener('click', user.showMessage); // this will alert "Hello, undefined!"
+
+        // With bind: 'this' is set to user object
+        document.getElementById('btn').addEventListener('click', user.showMessage.bind(user));
+    </script>
+</body>
+</html>
